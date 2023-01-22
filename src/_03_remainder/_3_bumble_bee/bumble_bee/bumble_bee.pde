@@ -21,7 +21,23 @@ Use remainder to make the colors alternate between yellow and black
 /*
 Now put his head on using drawBeeFace(x,y)
 */
-
+for(int i=0;i<=450;i+=10)
+{
+ if( i%4==0)
+{
+  fill(#0A0A0A);
+ellipse(i,i,60,60);
+} 
+else if(i==450)
+{
+ drawBeeFace(i,i); 
+}
+else
+{
+fill(#FFF703);
+ellipse(i,i,60,60);
+}
+}
 }
 
 /**************   Use these methods but  DON'T CHANGE THE CODE BELOW  **************/
